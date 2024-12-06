@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 30vh;
+            width: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            background-color: blue;
+        }
+        .b{
+            height: 25vh;
+            width: 25%;
+            background-color: gray;
+            border-radius: 50%;
+        
+        }
+    </style>
+</head>
+<body>
+   < <div class="box">
+        <div class="boxone b" ></div>
+        <div class="boxtwo b"></div>
+        <div class="boxthr b"></div>
+    </div>
+    <script>
+        let redbox=document.getElementsByClassName("boxone")[0]
+        let yellowbox=document.getElementsByClassName("boxtwo")[0]
+        let greenbox=document.getElementsByClassName("boxthr")[0]
+
+         trafficred=()=>{
+            redbox.addEventListener("click",()=>{
+                redbox.style.backgroundColor="red"
+                redbox.style.boxShadow="10px 10px 100px 10px red"
+            })
+        }
+        
+         trafficred()
+        const trafficyellow=()=>{
+            yellowbox.addEventListener("click",()=>{
+                yellowbox.style.backgroundColor="yellow"
+                yellowbox.style.boxShadow="10px 10px 100px 10px yellow"
+            })
+        }
+         trafficyellow()
+        const trafficgreen=()=>{
+            greenbox.addEventListener("click",()=>{
+                greenbox.style.backgroundColor="green"
+                greenbox.style.boxShadow="10px 10px 100px 10px green"
+            })
+        }
+         trafficgreen()
+    </script>
+</body>
+</html>
